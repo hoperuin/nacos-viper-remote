@@ -30,9 +30,9 @@ func NewNacosConfigManager(option *Option) (*nacosConfigManager, error) {
 		NamespaceId:         option.NamespaceId,
 		TimeoutMs:           5000,
 		NotLoadCacheAtStart: true,
-		RotateTime:          "1h",
-		MaxAge:              3,
-		LogLevel:            "info",
+		//RotateTime:          "1h",
+		//MaxAge:              3,
+		LogLevel: "info",
 	}
 
 	if option.Auth != nil && option.Auth.Enable {
